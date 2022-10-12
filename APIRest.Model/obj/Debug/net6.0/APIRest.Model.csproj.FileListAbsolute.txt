@@ -1,0 +1,12 @@
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\bin\Debug\net6.0\APIRest.Model.deps.json
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\bin\Debug\net6.0\APIRest.Model.dll
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\bin\Debug\net6.0\ref\APIRest.Model.dll
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\bin\Debug\net6.0\APIRest.Model.pdb
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.csproj.AssemblyReference.cache
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.AssemblyInfoInputs.cache
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.AssemblyInfo.cs
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.csproj.CoreCompileInputs.cache
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.dll
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\ref\APIRest.Model.dll
+C:\Users\jorge.munoz.m\Documents\Github\ASP.Net\API_Rest\APIRest\APIRest.Model\obj\Debug\net6.0\APIRest.Model.pdb

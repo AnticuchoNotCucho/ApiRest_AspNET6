@@ -28,33 +28,45 @@ namespace APIRest.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateBand([FromBody]Band band)
-        {
-            if (band == null)
-                return BadRequest();
-            if (!ModelState.IsValid)
-               return BadRequest(ModelState);
-
-            var created = await _bandRepository.InsertBand(band);
-            return Created("Created", created);
-        }
-        [HttpPut]
-        public async Task<IActionResult> UpdateBand([FromBody]Band band)
+        public async Task<IActionResult> CreateBand([FromBody] Band band)
         {
             if (band == null)
                 return BadRequest();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-           var update = await _bandRepository.UpdateBand(band);
+
+            var created = await _bandRepository.InsertBand(band);
+            return Created("Created", created);
+        }
+        [HttpPut]
+        public async Task<IActionResult> UpdateBand([FromBody] Band band)
+        {
+            if (band == null)
+                return BadRequest();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var update = await _bandRepository.UpdateBand(band);
 
             return NoContent();
         }
         [HttpDelete]
         public async Task<IActionResult> DeleteBand(int id)
         {
-            await _bandRepository.DeleteBand(new Band { idBand = id});
+            await _bandRepository.DeleteBand(new Band { idBands = id });
             return NoContent();
         }
+        [HttpGet("/Albums/{id}")]
+
+        public async Task<IActionResult> GetAlbums(int id)
+        {
+            return Ok(await _bandRepository.GetAlbums(id));
+        }
+        [HttpGet("/ALL/")]
+
+        public async Task<IActionResult> GetBandsAlbums()
+        {
+            return Ok(await _bandRepository.GetBandsAlbums());
+         }
 
     }
 }

@@ -15,7 +15,6 @@ namespace APIRest.Data.Repositories
         Task<bool> InsertBand(Band band);
         Task<bool> UpdateBand(Band band);
         Task<bool> DeleteBand(Band band);
-        Task<Band> GetAlbums(int id);
         Task<List<Band>> GetBandsAlbums();
     }
 }

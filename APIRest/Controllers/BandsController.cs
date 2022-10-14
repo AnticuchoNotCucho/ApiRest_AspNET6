@@ -46,7 +46,6 @@ namespace APIRest.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var update = await _bandRepository.UpdateBand(band);
-
             return NoContent();
         }
         [HttpDelete]
@@ -55,13 +54,8 @@ namespace APIRest.Controllers
             await _bandRepository.DeleteBand(new Band { idBands = id });
             return NoContent();
         }
-        [HttpGet("/Albums/{id}")]
-
-        public async Task<IActionResult> GetAlbums(int id)
-        {
-            return Ok(await _bandRepository.GetAlbums(id));
-        }
-        [HttpGet("/ALL/")]
+        
+        [HttpGet("ALL/")]
 
         public async Task<IActionResult> GetBandsAlbums()
         {

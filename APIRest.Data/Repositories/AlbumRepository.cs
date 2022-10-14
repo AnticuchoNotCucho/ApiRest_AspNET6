@@ -16,20 +16,13 @@ namespace APIRest.Data.Repositories
         {
             return new MySqlConnection(_connectionString.ConnectionString);
         }
-        public async Task<bool> DeleteAlbum(int id)
+        public async Task<bool> DeleteAlbum(int idAlbum, int idBands)
         {
             var db = DbConnection();
-            var sql = @"Delete from album where idAlbum = @ID";
-            var result = await db.ExecuteAsync(sql, new { ID = id });
+            var sql = @"Delete from album where idAlbum = @ID and idBands = @idband";
+            var result = await db.ExecuteAsync(sql, new { ID = idAlbum, idband = idBands });
             return result > 0;
             
-        }
-
-        public async Task<Album> GetAlbum(int id)
-        {
-            var db = DbConnection();
-            var sql = @"Select idBands, idAlbum, AlbumName from album where idAlbum = @ID";
-            return await db.QueryFirstOrDefaultAsync<Album>(sql, new {ID = id});
         }
 
         public async Task<IEnumerable<Album>> GetAllAlbums()
@@ -41,12 +34,25 @@ namespace APIRest.Data.Repositories
 
         public async Task<bool> InsertAlbum(Album album)
         {
-            throw new NotImplementedException();
+            var db = DbConnection();
+            var sql = @"Insert into album(AlbumName, idBands) values(@name, @idband)";
+            var result = await db.ExecuteAsync(sql, new { name = album.AlbumName, idband = album.idBands});
+            return result > 0;
         }
 
         public async Task<bool> UpdateAlbum(Album album)
         {
-            throw new NotImplementedException();
+            var db = DbConnection();
+            var sql = @"Update album SET AlbumName = @Name where idAlbum = @id";
+            var result = await db.ExecuteAsync(sql, new { id = album.idAlbum, Name = album.AlbumName });
+            return result > 0;
+        }
+
+        public async Task<Album> GetAlbum(int idAlbum, int idBands)
+        {
+            var db = DbConnection();
+            var sql = @"select * from album where idAlbum = @idalbum and idBands = @idbands";
+            return await db.QueryFirstOrDefaultAsync<Album>(sql, new {idalbum = idAlbum, idbands = idBands});
         }
     }
 }

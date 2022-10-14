@@ -888,11 +888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ASP.Net\\API_Rest\\APIRest\\APIRest.Data\\APIRest.Data.csproj",
+      "projectUniqueName": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ApiRest_AspNET6\\APIRest.Data\\APIRest.Data.csproj",
       "projectName": "APIRest.Data",
-      "projectPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ASP.Net\\API_Rest\\APIRest\\APIRest.Data\\APIRest.Data.csproj",
+      "projectPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ApiRest_AspNET6\\APIRest.Data\\APIRest.Data.csproj",
       "packagesPath": "C:\\Users\\jorge.munoz.m\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ASP.Net\\API_Rest\\APIRest\\APIRest.Data\\obj\\",
+      "outputPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ApiRest_AspNET6\\APIRest.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -915,8 +915,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ASP.Net\\API_Rest\\APIRest\\APIRest.Model\\APIRest.Model.csproj": {
-              "projectPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ASP.Net\\API_Rest\\APIRest\\APIRest.Model\\APIRest.Model.csproj"
+            "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ApiRest_AspNET6\\APIRest.Model\\APIRest.Model.csproj": {
+              "projectPath": "C:\\Users\\jorge.munoz.m\\Documents\\Github\\ApiRest_AspNET6\\APIRest.Model\\APIRest.Model.csproj"
             }
           }
         }

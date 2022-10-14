@@ -15,6 +15,7 @@ builder.Services.AddSingleton(MySqlConfiguration);
 //builder.Services.AddSingleton(new MySqlConnection(builder.Configuration.GetConnectionString("MySqlConnection")));
 builder.Services.AddScoped<IBandRepository, BandRepository>();
 builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
+builder.Services.AddScoped<ISongsRepository, SongsRepository>();
 
 
 

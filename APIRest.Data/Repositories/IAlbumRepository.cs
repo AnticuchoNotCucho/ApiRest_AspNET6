@@ -10,9 +10,9 @@ namespace APIRest.Data.Repositories
     public interface IAlbumRepository 
     {
         Task<IEnumerable<Album>> GetAllAlbums();
-        Task<Album> GetAlbum(int id);
+        Task<Album> GetAlbum(int idAlbum, int idBands);
         Task<bool> InsertAlbum(Album album);
         Task<bool> UpdateAlbum(Album album);
-        Task<bool> DeleteAlbum(int id);
+        Task<bool> DeleteAlbum(int idAlbum, int idBands);
     }
 }
